@@ -1,0 +1,92 @@
+.button {
+	display: inline-flex;
+	gap: 0.375rem;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	border-radius: 0.375rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	font-weight: 500;
+	text-transform: none;
+	cursor: pointer;
+	border: none;
+	transition-property: color, background-color, border-color,
+		text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+	&:disabled {
+		pointer-events: none;
+		opacity: 0.5;
+		cursor: default;
+	}
+}
+.default {
+	background-color: hsl(var(--primary));
+	color: hsl(var(--primary-foreground));
+	box-shadow: 0 0 #000;
+	&:hover {
+		background-color: hsl(var(--primary) / 0.9);
+	}
+}
+.destructive {
+	background-color: hsl(var(--destructive));
+	color: hsl(var(--destructive-foreground));
+	&:hover {
+		background-color: hsl(var(--destructive) / 0.9);
+	}
+}
+.outline {
+	border: 2px solid hsl(var(--input));
+	background-color: hsl(var(--background));
+	&:hover {
+		background-color: hsl(var(--accent));
+		color: hsl(var(--accent-foreground));
+	}
+}
+.secondary {
+	background-color: hsl(var(--secondary));
+	color: hsl(var(--secondary-foreground));
+	&:hover {
+		background-color: hsl(var(--secondary) / 0.8);
+	}
+}
+.ghost {
+	background-color: hsl(var(--background));
+	&:hover {
+		background-color: hsl(var(--accent));
+		color: hsl(var(--accent-foreground));
+	}
+}
+.link {
+	background-color: hsl(var(--background));
+	color: hsl(var(--primary));
+	text-underline-offset: 4px;
+	&:hover {
+		text-decoration-line: underline;
+	}
+}
+.small {
+	height: 2rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+.middle {
+	height: 2.25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.large {
+	height: 2.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.icon {
+	height: 2.25rem;
+	width: 2.25rem;
+}

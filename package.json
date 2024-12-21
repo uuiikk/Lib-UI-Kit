@@ -1,0 +1,15 @@
+{
+	"name": "@uuiikk/core",
+	"version": "0.1.0",
+	"main": "",
+	"description": "",
+	"keywords": [],
+	"author": "uuiikk",
+	"license": "MIT",
+	"dependencies": {},
+	"peerDependencies": {
+		"next": "15.1.2",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	}
+}

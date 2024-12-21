@@ -39,6 +39,7 @@
 .outline {
 	border: 2px solid hsl(var(--input));
 	background-color: hsl(var(--background));
+	color: hsl(var(--foreground));
 	&:hover {
 		background-color: hsl(var(--accent));
 		color: hsl(var(--accent-foreground));
@@ -53,6 +54,7 @@
 }
 .ghost {
 	background-color: hsl(var(--background));
+	color: hsl(var(--foreground));
 	&:hover {
 		background-color: hsl(var(--accent));
 		color: hsl(var(--accent-foreground));

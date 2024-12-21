@@ -15,10 +15,10 @@
 		text-decoration-color, fill, stroke;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 150ms;
+	user-select: none;
 	&:disabled {
 		pointer-events: none;
 		opacity: 0.5;
-		cursor: default;
 	}
 }
 .default {
@@ -89,4 +89,18 @@
 .icon {
 	height: 2.25rem;
 	width: 2.25rem;
+}
+
+.loader {
+	position: absolute;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

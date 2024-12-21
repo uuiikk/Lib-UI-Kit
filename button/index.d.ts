@@ -1,2 +1,2 @@
-export * from './button';
-export * from './button.module.css';
+export * from './button'
+export * from './button.module.css'
